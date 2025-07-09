@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trends - E-Commerce</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/trendes.css">
+    <link rel="stylesheet" href="../styles/newsletter.css">
+    <link rel="stylesheet" href="../styles/sprofuct.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+</head>
+
+<body> 
+    <div id="navbar-placeholder"></div>
+    <div class="container">
+        
+
+        <!-- Main Banner -->
+        <div class="main">
+            <div class="main-text">
+                <h1>Best Price <span>This Year</span></h1>
+                <p>Discover the latest trends at unbeatable prices.</p>
+                <button>Shop Now</button>
+            </div>
+            <img id="ads" src="../img/frontbanner/img1.png" alt="advertisement">
+        </div>
+
+        <!-- Featured Products -->
+        <div class="trend">
+            <div class="head">
+                <h1>Our Featured Products</h1>
+            </div>
+            <div class="card item-card" id="featured-card">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+
+        <section class="newsletter">
+            <div class="newsletter-container">
+                <h2>Subscribe to our Newsletter</h2>
+                <p>Get the latest updates, offers, and product releases directly in your inbox.</p>
+                <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                    <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p class="newsletter-message" id="newsletter-message"></p>
+            </div>
+        </section>
+
+        <!-- 
+        <section class="product-detail">
+            <div class="product-container">
+                <div class="product-image">
+                    <img src="path-to-product-image.jpg" alt="Product Name">
+                </div>
+
+                <div class="product-info">
+                    <h1 class="product-title">Boys Orange Colourblocked Hooded Sweatshirt</h1>
+                    <p class="product-price">$85.00</p>
+                    <div class="product-rating">
+                        ★★★★☆ (4.0)
+                    </div>
+
+                    <p class="product-description">
+                        A stylish and comfortable orange hooded sweatshirt made from premium fabric. Perfect for casual
+                        outings or lounging.
+                    </p>
+
+                    <div class="product-options">
+                        <label for="size">Size:</label>
+                        <select id="size">
+                            <option value="S">S</option>
+                            <option value="M" selected>M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" value="1" min="1">
+                    </div>
+
+                    <button class="add-to-cart" onclick="addToCart(101)">Add to Cart</button>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-text">
+                <img src="../images/shopping-online.png" alt="Trends Logo" class="footer-logo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="footer-text">
+                <h2>Links</h2>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">Shop</a></p>
+                <p><a href="#">Blog</a></p>
+                <p><a href="#">Contact</a></p>
+            </div>
+            <div class="footer-text">
+                <h2>Contact Us</h2>
+                <p>Phone: +123-456-7890</p>
+                <p>Email: support@trends.com</p>
+            </div>
+            <div class="footer-text">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/index.js" type="module" ></script>
+    <script src="../scripts/newsletter.js"></script>
+    <script src="../scripts/shop.js"  type="module" ></script>
+    <script src="../scripts/nav.js"></script>
+</body>
+
+</html>

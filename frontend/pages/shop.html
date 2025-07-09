@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech2etc Ecommerce Tutorial</title>
+    <link rel="stylesheet" href="../styles/trendes.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <div id="container">
+
+        <div id="shop-banners"><img id="shop-ads" src="../img/banner/shop banner 4.jpg" alt="advertisement"></div>
+        <div class="trend" id="shop-sec">
+            <div class="head">
+                <h1>Shop All Products</h1>
+            </div>
+            <div id="shop-card">
+                <!-- Women Section -->
+                <div class="category-section">
+                    <h2>Women</h2>
+                    <div class="item-card" id="women"></div>
+                </div>
+
+                <!-- Men Section -->
+                <div class="category-section">
+                    <h2>Men</h2>
+                    <div class="item-card" id="men"></div>
+                </div>
+
+                <!-- Kid Section -->
+                <div class="category-section">
+                    <h2>Kid</h2>
+                    <div class="item-card" id="kid"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mans-product"></div>
+
+    </div>
+    <script>
+        fetch("../components/nav.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+
+        fetch("../components/mans/man_shoose.html")
+            .then(res => res.text())
+            .then(data => {
+                console.log(data)
+                document.getElementById("mans-product").innerHTML = data;
+            });
+    </script>
+
+    <script type="module" src="../scripts/shop.js"></script>
+    <script type="module" src="../scripts/index.js"></script>
+    <!-- <script src="../product-objects-files/mans.js"></script> -->
+</body>
+
+</html>

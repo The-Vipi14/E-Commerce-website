@@ -1,0 +1,16 @@
+<div class="trend" id="man_shoose">
+    <div id="shop-card">
+        <div class="category-section">
+            <div class="item-card"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    import { man_shoose } from '../../product-object-files/mans.js';
+console.log(man_shoose)
+    document.querySelector('.item-card').innerHTML = man_shoose.map(pro => `
+      <img src="${pro.image}" alt="shoe-${pro.id}" style="width: 200px; margin: 10px;">
+      <h2 style="width: 200px; margin: 10px;"> ${pro.image}<h2/>
+    `).join('');
+</script>

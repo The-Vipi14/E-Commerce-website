@@ -1,0 +1,142 @@
+/* Trend Sections */
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #333;
+  user-select: none;
+  overflow-x: hidden;
+}
+#navbar-placeholder{
+  max-width: 1450px;
+  margin: auto;
+}
+/* Container */
+#container {
+  max-width: 1500px;
+  margin: 10px auto;
+  padding: 0 20px;
+}
+
+#shop-banner {
+  margin-top: 50px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#shop-ads {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.5s ease-in-out, opacity 0.5s;
+  left: 0;
+  border-radius: 20px;
+}
+
+.trend {
+  margin: 40px 0;
+}
+
+.head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.head h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.category-section {
+  margin-bottom: 40px;
+}
+
+.category-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.item-card {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.item-card::-webkit-scrollbar {
+  display: none;
+}
+.item-card::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.item-card .crd {
+  min-width: 270px;
+  /* flex: 0 0 auto; */
+  scroll-snap-align: start;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.crd:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.crd img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.crd-text {
+  padding: 15px;
+}
+
+.crd-text h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.crd-text p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff6200;
+  margin-bottom: 10px;
+}
+
+.crd-text .stars {
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.crd-text button {
+  padding: 8px 16px;
+  background: #ff6200;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.crd-text button:hover {
+  background: #e55a00;
+}
